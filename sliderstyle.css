@@ -1,0 +1,61 @@
+
+
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+/*SE USA FLEXBOX PARA PONER UNA IMAGEN AL LADO DE LA OTRA*/
+/*EL WIDTH DEPENDERA DE LA CANTIDAD DE IMAGENES*/
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	/*SE CREA UNA ANIMACION*/
+	animation: cambio 20s infinite;
+	/*Para cuado llegue al 100% no cambie bruscamente si no que se devielva en los porcentajes*/
+	animation-direction: alternate;
+	/*Efectos*/
+	animation-timing-function:ease-in-out;
+	/*animation-timing-function:ease-in-out;*/
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width: 70%;
+}
+
+/*AHORA TRABAJAMOS EN LAS PARADAS DE LA ANIMACION*/
+@keyframes cambio{
+	0%{ margin-left: 15%; }
+	5%{ margin-left: 5%; }
+10%{ margin-left: 0; }
+15%{ margin-left: -10%; }
+	20%{ margin-left: -20%; }
+
+	25%{ margin-left: -30%; }
+30%{ margin-left: -40%; }
+35%{ margin-left: -50%; }
+40%{ margin-left: -60%; }
+	45%{ margin-left: -75%; }
+
+	50%{ margin-left: -100%; }
+55%{ margin-left: -110%; }
+	60%{ margin-left: -120%; }
+65%{ margin-left: -130%; }
+	70%{ margin-left: -140%; }
+
+	75%{ margin-left: -150%; }
+80%{ margin-left: -160%; }
+	85%{ margin-left: -175%; }
+90%{ margin-left: -185%; }
+	95%{ margin-left: -195%; }
+
+	100%{ margin-left: -210%; }
+
+}
